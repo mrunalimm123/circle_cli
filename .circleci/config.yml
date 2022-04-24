@@ -5,15 +5,8 @@ jobs:
  steps:
  - checkout
  - run: python main.py
- test:
- docker:
- - image: python
- steps:
- - checkout
- - run: python test1.py
 # Orchestrate our job run sequence
 workflows:
  build_and_test:
  jobs:
  - build
- - test
