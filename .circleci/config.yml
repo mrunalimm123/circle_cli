@@ -15,7 +15,7 @@ test:
   - run: python test1.py
 # Orchestrate our job run sequence
 workflows:
- #build_and_test:
+ build_and_test:
   jobs:
    - build
    - test
