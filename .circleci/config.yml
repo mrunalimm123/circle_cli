@@ -13,7 +13,7 @@ jobs:
       - image: python
     steps:
       - checkout
-      - run: python test1.py
+      - run: python test2.py
 # Orchestrate our job run sequence
 workflows:
     build_and_test:
